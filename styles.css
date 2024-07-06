@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.suitcase {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-color: #8b4513;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.handle {
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    background-color: #5a2c0f;
+    border-radius: 70px;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.left-lock, .right-lock {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: #444;
+    top: 10px;
+}
+
+.left-lock {
+    left: 10px;
+}
+
+.right-lock {
+    right: 10px;
+}
+
+.strap {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #5a2c0f;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.label {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: #444;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wheels {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.wheel {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+}
